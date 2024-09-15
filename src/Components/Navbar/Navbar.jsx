@@ -17,22 +17,23 @@ const Navbar = () => {
                 <h1 className="title">SmartCart</h1>
             </div>
 
-            <ul>
-                <li onClick={() => { setMenu("shopAll") }}> <Link to="/">Shop All</Link> {menu === "shopAll" ? <hr /> : <></>} </li>
-                <li onClick={() => { setMenu("shopmen") }}> <Link to="/men">Shop Men</Link> {menu === "shopmen" ? <hr /> : <></>} </li>
-                <li onClick={() => { setMenu("shopWomen") }}> <Link to="/women">Shop Women</Link> {menu === "shopWomen" ? <hr /> : <></>} </li>
-                <li onClick={() => { setMenu("shopKids") }}> <Link to="/kid">Shop Kids</Link> {menu === "shopKids" ? <hr /> : <></>} </li>
-                <li onClick={() => { setMenu("contact") }}> <Link to="/contact">Contact</Link> {menu === "contact" ? <hr /> : <></>} </li>
+          <ul>
+                <li onClick={() => { setMenu("shopAll") }}> <a href="/">Shop All</a> {menu === "shopAll" ? <hr /> : <></>} </li>
+                <li onClick={() => { setMenu("shopmen") }}> <a href="/men">Shop Men</a> {menu === "shopmen" ? <hr /> : <></>} </li>
+                <li onClick={() => { setMenu("shopWomen") }}> <a href="/women">Shop Women</a> {menu === "shopWomen" ? <hr /> : <></>} </li>
+                <li onClick={() => { setMenu("shopKids") }}> <a href="/kid">Shop Kids</a> {menu === "shopKids" ? <hr /> : <></>} </li>
+                <li onClick={() => { setMenu("contact") }}> <a href="/contact">Contact</a> {menu === "contact" ? <hr /> : <></>} </li>
               
             </ul>
 
             <div className="actions">
-                <Link to="/login"><button className="sign-in-button">Sign In</button></Link>
-                <Link to="/cart"><img src={cart_icon} alt="cart_icon" className="cart_icon" /></Link>
+                <a href="/login"><button className="sign-in-button">Sign In</button></a>
+                <a href="/cart"><img src={cart_icon} alt="cart_icon" className="a" /></a>
                 <div className="nav-cart-count">0</div>
-            </div>
+            </div> 
         </div>
     );
+    // jkhnj,nm
 }
 
 export default Navbar;
