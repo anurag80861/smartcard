@@ -5,6 +5,7 @@ import LoginSignup from "./Components/Pages/LoginSignup";
 import ShopCategory from "./Components/Pages/ShopCategory";
 import Product from "./Components/Pages/Product";
 import Contact from "./Components/Pages/Contact";
+import Footer from "./Components/Footer/Footer";
 
 import './index.css';
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
       <Navbar />
       <BrowserRouter>
-      <Routes>
+        <Routes>
           <Route path="/" element={<Shop />} />
           <Route path="/men" element={<ShopCategory category="Men" />} />
           <Route path="/women" element={<ShopCategory category="Women" />} />
@@ -22,17 +23,18 @@ function App() {
           <Route path="/product/:id" element={<Product />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
-          {/* <Route path="/login" element={<LoginSignup />} /> */}
+          <Route path="/login" element={<LoginSignup />} />
 
-      </Routes>
+        </Routes>
+        <div className="content" >
+          <h3>Welcome to the smartcart</h3>
+        </div>
+        <Footer />
       </BrowserRouter>
-      <div className="content" >
-        <h3>Welcome to the smartcart</h3>
-      </div>
-      </div>
+
+    </div>
   );
 }
 
 export default App;
 
-      
