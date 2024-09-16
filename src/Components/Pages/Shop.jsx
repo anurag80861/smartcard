@@ -1,10 +1,12 @@
 import Hero from "../Hero/Hero";
+import Trending from "../Trending/Trending";
 
 const Shop = () => {
     return ( 
         <div>
-            <h1>Shop Page</h1>
+            
             <Hero/>
+            <Trending/>
         </div>
      );
 }
