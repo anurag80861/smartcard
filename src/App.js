@@ -27,7 +27,7 @@ function App() {
 
         </Routes>
         <div className="content" >
-          <h3>Welcome to the smartcart</h3>
+          <h3></h3>
         </div>
         <Footer />
       </BrowserRouter>
