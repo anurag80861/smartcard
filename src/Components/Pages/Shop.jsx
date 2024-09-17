@@ -1,4 +1,5 @@
 import Hero from "../Hero/Hero";
+import Offers from "../Offers/Offers";
 import Trending from "../Trending/Trending";
 
 const Shop = () => {
@@ -7,6 +8,7 @@ const Shop = () => {
             
             <Hero/>
             <Trending/>
+            <Offers/>
         </div>
      );
 }

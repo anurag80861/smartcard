@@ -25,8 +25,8 @@ let data_product_trending_women = [
     name: "Sports Crop Top",
     description: "This is a description of the product. It is a very good product. You should buy it.",
     image: p3_img,
-    new_cost:800.50,
-    old_cost: 790.00,
+    new_cost:500.50,
+    old_cost:690.00,
   },
   {
     id: 4,
